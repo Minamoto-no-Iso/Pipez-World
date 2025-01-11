@@ -1,0 +1,101 @@
+characters={
+
+GER_wilhelm_canaris={
+		name=GER_wilhelm_canaris
+		portraits={
+			army={
+				small="GFX_idea_ger_wilhelm_canaris"
+			}
+		}
+		country_leader={
+			ideology=
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ger_wilhelm_canaris
+			available = {
+				has_intelligence_agency = yes 
+			}
+			allowed = {
+				original_tag = GER
+				has_dlc = "La Resistance"
+			}
+			traits = {
+				head_of_intelligence 
+			}
+		}		
+	}
+
+VIL_Conrad_Albrecht ={
+		name=VIL_Albrecht_Conrad
+		portraits={
+			army={
+				large=GFX_portrait_GER_erich_raeder
+				small=GFX_portrait_GER_erich_raeder_small
+			}
+			army={
+				small="GFX_idea_raeder"
+			}
+		}
+		
+		navy_leader={
+			traits={  }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			maneuvering_skill=3
+			coordination_skill=3
+			legacy_id=27
+		}
+	}
+	VIL_Hermann_Boehm ={
+		name=VIL_Hermann_Boehm
+		portraits={
+			army={
+				large=GFX_portrait_GER_erich_raeder
+				small=GFX_portrait_GER_erich_raeder_small
+			}
+			army={
+				small="GFX_idea_raeder"
+			}
+		}
+		
+		navy_leader={
+			traits={  }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			maneuvering_skill=3
+			coordination_skill=3
+			legacy_id=27
+		}
+	}
+
+VIL_Friedrich_Ruge ={
+		name=VIL_Friedrich_Ruge
+		portraits={
+			army={
+				large=GFX_portrait_GER_erich_raeder
+				small=GFX_portrait_GER_erich_raeder_small
+			}
+			army={
+				small="GFX_idea_raeder"
+			}
+		}
+		
+		navy_leader={
+			traits={  }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			maneuvering_skill=3
+			coordination_skill=3
+			legacy_id=27
+		}
+	}
+
+
+}

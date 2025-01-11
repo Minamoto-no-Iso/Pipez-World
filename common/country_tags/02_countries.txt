@@ -1,0 +1,3 @@
+OSB = "countries/Ost Berlin"
+VIL = "countries/Vilgemshafen.txt"
+RSR = "countries/Reinland Socialstic Republic"
