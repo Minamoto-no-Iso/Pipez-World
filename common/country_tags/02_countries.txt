@@ -1,3 +1,7 @@
 OSB = "countries/Ost Berlin"
 VIL = "countries/Vilgemshafen.txt"
 RSR = "countries/Reinland Socialstic Republic"
+CON = "countries/Constantinopol"
+MAI = "countries/Maniots"
+QOR = "countries/Corinth"
+NAC = "countries/North African Corpus"

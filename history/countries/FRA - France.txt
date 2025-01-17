@@ -230,13 +230,6 @@ add_ideas = {
 	FRA_inefficient_economy_2
 }
 
-give_guarantee = CZE
-give_guarantee = YUG
-give_guarantee = ROM
-give_guarantee = POL
-give_guarantee = BEL
-give_guarantee = MNC
-give_guarantee = ADR
 
 recruit_character = FRA_philippe_petain
 recruit_character = FRA_maurice_thorez
@@ -340,45 +333,6 @@ if = {
 	recruit_character = FRA_rene_nicod
 }
 
-if = {
-	limit = { has_dlc = "Together for Victory" }
-	set_autonomy = {
-		target = SYR
-		autonomous_state = autonomy_colony
-	}
-	set_autonomy = {
-		target = ALW
-		autonomous_state = autonomy_colony
-	}
-	set_autonomy = {
-		target = JDZ
-		autonomous_state = autonomy_colony
-	}
-	set_autonomy = {
-		target = LEB
-		autonomous_state = autonomy_colony
-	}
-	set_autonomy = {
-		target = MOR
-		autonomous_state = autonomy_colony
-	}
-	set_autonomy = {
-		target = TUN
-		autonomous_state = autonomy_colony
-	}
-	set_autonomy = {
-		target = MRT
-		autonomous_state = autonomy_colony
-	}
-	else = {
-		puppet = SYR
-		puppet = JDZ
-		puppet = ALW
-		puppet = LEB
-		puppet = MOR
-		puppet = TUN
-	}
-}
 
 ### VARIANTS ###
 # 1936 Start #

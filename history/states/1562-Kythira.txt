@@ -5,8 +5,9 @@ state={
 		20282 
 	}
 	history={
-		owner = GRE
+		owner = MAI
 		add_core_of = GRE
+		add_core_of = MAI
 		buildings = {
 			infrastructure = 2
 		}

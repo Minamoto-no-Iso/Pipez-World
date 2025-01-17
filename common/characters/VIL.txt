@@ -1,5 +1,35 @@
 characters={
 
+GER_erich_raeder={
+		name=GER_erich_raeder
+		portraits={
+			army={
+				large=GFX_portrait_GER_erich_raeder
+				small=GFX_portrait_GER_erich_raeder_small
+			}
+			army={
+				small="GFX_idea_raeder"
+			}
+		}
+		
+		country_leader={
+			ideology=oligarchism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+		navy_leader={
+			traits={ battleship_adherent naval_lineage }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			maneuvering_skill=3
+			coordination_skill=3
+			legacy_id=27
+		}
+	}
+
 GER_wilhelm_canaris={
 		name=GER_wilhelm_canaris
 		portraits={
@@ -51,26 +81,22 @@ VIL_Conrad_Albrecht ={
 			legacy_id=27
 		}
 	}
-	VIL_Hermann_Boehm ={
-		name=VIL_Hermann_Boehm
+		VIL_hermann_boehm={
+		name=GER_hermann_boehm
 		portraits={
 			army={
-				large=GFX_portrait_GER_erich_raeder
-				small=GFX_portrait_GER_erich_raeder_small
-			}
-			army={
-				small="GFX_idea_raeder"
+				large=GFX_portrait_GER_hermann_boehm
+				small=GFX_portrait_GER_hermann_boehm_small
 			}
 		}
-		
 		navy_leader={
-			traits={  }
+			traits={ craven superior_tactician }
 			skill=4
 			attack_skill=3
 			defense_skill=4
-			maneuvering_skill=3
-			coordination_skill=3
-			legacy_id=27
+			maneuvering_skill=4
+			coordination_skill=2
+			legacy_id=29
 		}
 	}
 

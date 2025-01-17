@@ -6,7 +6,7 @@ state={
 	}
 	
 	history={
-		owner = ITA
+		owner = SWI
 		add_core_of = ITA
 		add_core_of = PIE
 		buildings = {

@@ -4,8 +4,9 @@ state={
 	name="STATE_1111"
 				
 	history = {
-		owner = FRA
+		owner = KBL
 		add_core_of = ALG
+		add_core_of = KBL
 		buildings = {
 			infrastructure = 2
 			21004 = { naval_base = 2 }

@@ -3,8 +3,9 @@ state={
 	name="STATE_1867"
 				
 	history = {
-		owner = FRA
+		owner = KBL
 		add_core_of = ALG
+		add_core_of = KBL
 		buildings = {
 			infrastructure = 2
 		}

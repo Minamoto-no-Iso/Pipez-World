@@ -1,0 +1,34 @@
+focus_tree = {
+    id = rostov_focus
+
+    country = {
+        factor = 0 
+        modifier = {
+			add = 10
+			tag = DON
+			#always = no
+		}
+    }
+
+    continuous_focus_position = { x = 50 y = 1100 }
+
+    focus = {
+        id = DON_vostanovite_rostov
+        icon = gfx_
+        mutually_exclusive = { focus = DON_podgotovitca_c_obedineniu }
+        x = 3
+        y = 1
+
+        cost = 10
+
+        ai_will_do = {
+			factor = 7
+		}
+
+        completion_reward = {
+            add_ideas = {
+                DON_vozrojdenie_rostova
+            }
+        }
+    }
+}

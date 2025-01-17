@@ -3,9 +3,10 @@ state={
 	name="STATE_2921"
 
 	history={
-		owner = ITA
+		owner = NAP
 		add_core_of = ITA
 		add_core_of = PUG
+		add_core_of = NAP
 		buildings = {
 			infrastructure = 3
 

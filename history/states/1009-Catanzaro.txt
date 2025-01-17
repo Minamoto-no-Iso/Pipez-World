@@ -6,9 +6,10 @@ state={
 		oil = 2
 	}
 	history = {
-		owner = ITA
+		owner = NAP
 		add_core_of = ITA
 		add_core_of = CAL
+		add_core_of = NAP
 		buildings = {
 			infrastructure = 3
 

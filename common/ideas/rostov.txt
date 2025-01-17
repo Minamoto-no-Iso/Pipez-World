@@ -1,0 +1,22 @@
+ideas = {
+
+    country = {
+        DON_vozrojdenie_rostova = {
+
+            picture = anti_soviet_pact
+
+            allowed = {
+				original_tag = DON
+            }
+
+
+            modifier = {
+            	consumer_goods_factor = 0.1
+                production_factory_efficiency_gain_factor = 0.05 
+                production_factory_max_efficiency_factor = 0.05 
+                production_speed_buildings_factor = 0.05 
+                production_speed_industrial_complex_factor = 0.05 
+            }
+        }
+    }
+}

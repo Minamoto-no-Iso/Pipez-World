@@ -1,0 +1,740 @@
+focus_tree = {
+	id = VIL_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = VIL
+		}
+		
+		modifier = {
+			add = 10
+			original_tag = VIL
+		}
+	}
+	focus = {
+		id = VIL_economik_bust
+		prerequisite = { focus =  }
+		relative_position_id = 
+		icon = GFX_SOV_national_specialists_ccp_2d_sov_compatibility
+		x = 10
+		y = 1
+		
+		cost = #
+
+		search_filters = { FOCUS_FILTER  }
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+		add_political_power = 100
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = VIL_fishing #рыбов ловство
+		prerequisite = { focus = VIL_economik_bust }
+		relative_position_id = VIL_economik_bust
+		icon = GFX_focus_SWE_state_paid_vacation
+		x = 0
+		y = 1
+		
+		cost = #
+
+		search_filters = { FOCUS_FILTER  }
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+			add_ideas = idea_VIL_fishing
+		}
+	}
+	focus = {
+		id = VIL_konserwa #Консервный завод
+		prerequisite = { focus = VIL_fishing }
+		relative_position_id = VIL_fishing
+		icon = GFX_focus_ARG_yacimientos_petroliferos_fiscales
+		x = 0
+		y = 1
+		
+		cost = #
+
+		search_filters = { FOCUS_FILTER  }
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+			# = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = VIL_trade #Торговля консервами
+		prerequisite = { focus = VIL_konserwa }
+		relative_position_id = VIL_konserwa
+		icon = GFX_focus_generic_monetary_union
+		x = 0
+		y = 1
+		
+		cost = #
+
+		search_filters = { FOCUS_FILTER  }
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+			add_ideas = idea_VIL_fish_sell
+		}
+	}
+	focus = {
+		id = VIL_war_economy
+		prerequisite = { focus = VIL_economik_bust }
+		relative_position_id = VIL_economik_bust
+		icon = GFX_focus_generic_military_industry
+		x = -2
+		y = 1
+		
+		cost = #
+
+		search_filters = { FOCUS_FILTER  }
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+			add_ideas = idea_VIL_war_economy
+		}
+	}
+	focus = {
+		id = VIL_arm_manufactur
+		prerequisite = { focus = VIL_war_economy }
+		relative_position_id = VIL_war_economy
+		icon = GFX_focus_generic_reorient_production
+		x = 0
+		y = 1
+		
+		cost = #
+
+		search_filters = { FOCUS_FILTER  }
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+			 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = VIL_army_inovation
+		prerequisite = { focus = VIL_arm_manufactur }
+		relative_position_id = VIL_arm_manufactur
+		icon = GFX_focus_GER_absorb_the_abwehr
+		x = 0
+		y = 1
+		
+		cost = #
+
+		search_filters = { FOCUS_FILTER  }
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = VIL_inf_and_artillery_advancement
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = VIL_slots
+		prerequisite = { focus = VIL_economik_bust }
+		relative_position_id = VIL_economik_bust
+		icon = GFX_focus_GER_ascension_of_goring
+		x = 2
+		y = 1
+		
+		cost = #
+
+		search_filters = { FOCUS_FILTER  }
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+			every_owned_state = { 
+			limit = { building_slots < # }
+			add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = VIL_infrastructura
+		prerequisite = { focus = VIL_slots }
+		relative_position_id = VIL_slots
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 0
+		y = 1
+		
+		cost = #
+
+		search_filters = { FOCUS_FILTER  }
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+			every_owned_state = { 
+			limit = {
+						infrastructure < #
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+				}
+				
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+		}
+		}
+	}
+	focus = {
+		id = VIL_building
+		prerequisite = { focus = VIL_infrastructura }
+		relative_position_id = VIL_infrastructura
+		icon = GFX_SOV_develop_the_urals_ccp_2d_sov_compatibility
+		x = 0
+		y = 1
+		
+		cost = #
+
+		search_filters = { FOCUS_FILTER  }
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+			add_ideas = idea_VIL_buildings 
+		}
+	}
+	focus = {
+		id = VIL_flot
+		prerequisite = { focus =  }
+		relative_position_id = 
+		icon = #
+		x = 0
+		y = 1
+		
+		cost = #
+
+		search_filters = { FOCUS_FILTER  }
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+			navy_experience = 50
+		}
+	}
+	focus = {
+		id = VIL_naval_effort
+		prerequisite = { focus = VIL_flot }
+		relative_position_id = VIL_flot
+		icon = #
+		x = -2
+		y = 1
+		
+		cost = #
+
+		search_filters = { FOCUS_FILTER  }
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			
+		}
+available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+
+		complete_tooltip = {
+			navy_experience = 25
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+			}
+		}
+		
+		completion_reward = {
+			navy_experience = 25
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}			
+		}	
+	}
+	focus = {
+		id = VIL_navy_doctrine
+		prerequisite = { focus = VIL_naval_effort }
+		relative_position_id = VIL_naval_effort
+		icon = #
+		x = 0
+		y = 1
+		
+		cost = #
+
+		search_filters = { FOCUS_FILTER  }
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = fleet_in_being_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = fleet_in_being_tree
+			}
+		}
+	}
+	focus = {
+		id = VIL_navy_doctrine_2
+		prerequisite = { focus = VIL_navy_doctrine }
+		relative_position_id = VIL_navy_doctrine
+		icon = #
+		x = 0
+		y = 1
+		
+		cost = #
+
+		search_filters = { FOCUS_FILTER  }
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = fleet_in_being_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = fleet_in_being_tree
+			}
+		}
+	}
+	focus = {
+		id = VIL_small_ship
+		prerequisite = { focus = VIL_flot }
+		relative_position_id = VIL_flot
+		icon = #
+		x = 0
+		y = 1
+		
+		cost = #
+
+		search_filters = { FOCUS_FILTER  }
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+	focus = {
+		id = VIL_submarines
+		prerequisite = { focus = VIL_small_ship }
+		relative_position_id = VIL_small_ship
+		icon = #
+		x = 0
+		y = 1
+		
+		cost = #
+
+		search_filters = { FOCUS_FILTER  }
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+	focus = {
+		id = VIL_tgw_u_war
+		prerequisite = { focus = VIL_submarines }
+		relative_position_id = VIL_submarines
+		icon = #
+		x = 0
+		y = 1
+		
+		cost = #
+
+		search_filters = { FOCUS_FILTER  }
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = sub_op_bonus
+				cost_reduction = 0.5
+				uses = 2
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
+		}
+	}
+	focus = {
+		id = VIL_big_ship
+		prerequisite = { focus = VIL_flot }
+		relative_position_id = VIL_flot
+		icon = #
+		x = 2
+		y = 1
+		
+		cost = #
+
+		search_filters = { FOCUS_FILTER  }
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = fleet_in_being_bonus
+				cost_reduction = 0.25
+				uses = 2
+				category = fleet_in_being_tree
+			}
+		}
+	}
+	focus = {
+		id = VIL_cruiser_effort
+		prerequisite = { focus = VIL_big_ship }
+		relative_position_id = VIL_big_ship
+		icon = #
+		x = 0
+		y = 1
+		
+		cost = #
+
+		search_filters = { FOCUS_FILTER  }
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+	}
+	focus = {
+		id = VIL_capital_ships_effort
+		prerequisite = { focus = VIL_cruiser_effort }
+		relative_position_id = VIL_cruiser_effort
+		icon = #
+		x = 0
+		y = 1
+		
+		cost = #
+
+		search_filters = { FOCUS_FILTER  }
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = bc_tech
+				category = bb_tech
+				category = cv_tech
+			}
+		}
+	}
+}

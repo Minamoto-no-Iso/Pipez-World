@@ -1,0 +1,43 @@
+VIL_spy_network_idea = {
+			picture = generic_spy_coup
+			allowed = { original_tag = VIL }
+
+			modifier = {
+				operative_slot = 2
+				intel_network_gain_factor = 0.15
+				enemy_operative_capture_chance_factor = 0.2
+			}			
+		}		
+		idea_VIL_fishing = {
+			picture = escort_effort_focus
+			allowed = { original_tag = VIL }
+
+			modifier = {
+				consumer_goods_factor = -0.1
+			}			
+		}		
+		idea_VIL_fish_sell = {
+			picture = generic_foreign_capital
+			allowed = { original_tag = VIL }
+
+			modifier = {
+				political_power_gain = 0.1
+			}			
+		}	
+		idea_VIL_war_economy = {
+			picture = generic_production_bonus
+			allowed = { original_tag = VIL }
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+			}			
+		}
+		idea_VIL_buildings = {
+			picture = generic_exploit_mines
+			allowed = { original_tag = VIL }
+
+			modifier = {
+				production_speed_buildings_factor = 0.10
+			}			
+		}`
+		

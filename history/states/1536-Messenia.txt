@@ -5,8 +5,9 @@ state={
 		8137 20250 20267 20268 
 	}
 	history={
-		owner = GRE
+		owner = QOR
 		add_core_of = GRE
+		add_core_of = QOR
 		buildings = {
 			infrastructure = 2
 			20250 = { naval_base = 1 }

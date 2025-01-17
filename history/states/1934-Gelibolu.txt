@@ -4,9 +4,10 @@ state={
 	name="STATE_1934"
 
 	history={
-		owner = TUR
+		owner = CON
 		add_core_of = TUR
 		add_core_of = THR
+		add_core_of = CON
 		buildings = {
 			infrastructure = 2
 
@@ -15,8 +16,6 @@ state={
 			infrastructure = 2
 
 		}
-		set_demilitarized_zone = yes
-
 	}
 
 	provinces={

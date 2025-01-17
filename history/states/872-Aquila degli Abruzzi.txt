@@ -6,9 +6,10 @@ state={
 		aluminium = 10
 	}
 	history = {
-		owner = ITA
+		owner = NAP
 		add_core_of = ITA
 		add_core_of = ABR
+		add_core_of = NAP
 		buildings = {
 			infrastructure = 3
 		}

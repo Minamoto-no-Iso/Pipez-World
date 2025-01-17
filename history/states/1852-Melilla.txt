@@ -3,9 +3,10 @@ state={
 	name="STATE_1852"
 			
 	history={
-		owner = SPR
+		owner = TNG
 		add_core_of = ADU
 		add_core_of = SPR
+		add_core_of = TNG
 		buildings = {
 			infrastructure = 3
 			20911 = { naval_base = 1 }

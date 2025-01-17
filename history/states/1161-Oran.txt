@@ -5,7 +5,8 @@ state={
 				
 	resources = { steel = 28 }
 	history = {
-		owner = FRA
+		owner = KBL
+		add_core_of = KBL
 		add_core_of = ALG
 		buildings = {
 			infrastructure = 2

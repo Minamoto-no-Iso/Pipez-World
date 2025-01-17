@@ -4,8 +4,9 @@ state={
 	name="STATE_945"
 
 	history={
-		owner = TUR
+		owner = CON
 		add_core_of = TUR
+		add_core_of = CON
 		buildings = {
 			infrastructure = 3
 			arms_factory = 2
@@ -14,7 +15,6 @@ state={
 		victory_points = {
 			15013 20 
 		}
-		set_demilitarized_zone = yes
 
 	}
 

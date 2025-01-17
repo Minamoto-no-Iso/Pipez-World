@@ -5,7 +5,7 @@ state={
 		aluminium=3
 	}
 	history = {
-		owner = ITA
+		owner = PIE
 		add_core_of = ITA
 		add_core_of = PIE
 		add_core_of = OCC

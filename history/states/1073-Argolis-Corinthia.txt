@@ -3,8 +3,9 @@ state={
 	id=1073
 	name="STATE_1073"
 	history={
-		owner = GRE
+		owner = QOR
 		add_core_of = GRE
+		add_core_of = QOR
 		buildings = {
 			infrastructure = 2
 		}

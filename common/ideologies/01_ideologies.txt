@@ -1,0 +1,11 @@
+ideologies = {
+
+    liberalism = {
+
+        types = {
+
+            social_democracy = {
+            }
+        }
+    }
+}
