@@ -18,5 +18,114 @@ ideas = {
                 production_speed_industrial_complex_factor = 0.05 
             }
         }
+        DON_vozrojdenie_rostova_1 = {
+
+            picture = anti_soviet_pact
+
+            allowed = {
+				original_tag = DON
+            }
+
+
+            modifier = {
+            	consumer_goods_factor = 0.1
+                production_factory_efficiency_gain_factor = 0.08 
+                production_factory_max_efficiency_factor = 0.08
+                production_speed_buildings_factor = 0.1
+                production_speed_industrial_complex_factor = 0.1 
+            }
+        }
+        DON_vozrojdenie_rostova_2 = {
+
+            picture = anti_soviet_pact
+
+            allowed = {
+				original_tag = DON
+            }
+
+
+            modifier = {
+            	consumer_goods_factor = 0.12
+                production_factory_efficiency_gain_factor = 0.1 
+                production_factory_max_efficiency_factor = 0.1
+                production_speed_buildings_factor = 0.15
+                production_speed_industrial_complex_factor = 0.1 
+            }
+        }
+        DON_vozrojdenie_rostova_3 = {
+
+            picture = anti_soviet_pact
+
+            allowed = {
+				original_tag = DON
+            }
+
+
+            modifier = {
+            	consumer_goods_factor = 0.1
+                production_factory_efficiency_gain_factor = 0.2
+                production_factory_max_efficiency_factor = 0.2
+                production_speed_buildings_factor = 0.2
+                production_speed_industrial_complex_factor = 0.15 
+            }
+        }
+        DON_podgotovca_obedinenie = {
+
+            picture = anti_soviet_pact
+
+            allowed = {
+				original_tag = DON
+            }
+
+
+            modifier = {
+            	consumer_goods_factor = 0.1
+                production_factory_efficiency_gain_factor = 0.1 
+                production_factory_max_efficiency_factor = 0.1
+            }
+        }
+        DON_experiments_udobrenia = {
+
+            picture = anti_soviet_pact
+
+            allowed = {
+				original_tag = DON
+            }
+
+
+            modifier = {
+            	consumer_goods_factor = -0.1
+                monthly_population = 0.1
+            }
+        }
+        DON_agrarian_state = {
+
+            picture = anti_soviet_pact
+
+            allowed = {
+				original_tag = DON
+            }
+
+
+            modifier = {
+            	consumer_goods_factor = -0.15
+                monthly_population = 0.2
+            }
+        }
+        DON_nizkie_nalogy = {
+
+            picture = anti_soviet_pact
+
+            allowed = {
+				original_tag = DON
+            }
+
+
+            modifier = {
+            	consumer_goods_factor = 0.05
+                production_factory_efficiency_gain_factor = 0.1 
+                production_factory_max_efficiency_factor = 0.1
+            }
+        }
     }
 }

@@ -8,4 +8,20 @@ ideologies = {
             }
         }
     }
+
+    anarchism = {
+
+        types = {
+            anarcho_capitalism = {
+            }
+        }
+    }
+    
+    monarchism = {
+
+        types = {
+            absolute_monarchy = {
+            }
+        }
+    }
 }

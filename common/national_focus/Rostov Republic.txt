@@ -10,7 +10,7 @@ focus_tree = {
 		}
     }
 
-    continuous_focus_position = { x = 50 y = 1100 }
+    continuous_focus_position = { x = 50 y = 1500 }
 
     focus = {
         id = DON_vostanovite_rostov
@@ -31,4 +31,224 @@ focus_tree = {
             }
         }
     }
+    focus = {
+        id = DON_podgotovitca_c_obedineniu
+        icon = gfx_
+        mutually_exclusive = { focus = DON_podgotovitca_c_obedineniu }
+        x = 7
+        y = 1
+
+        cost = 10
+
+        ai_will_do = {
+			factor = 7
+		}
+
+        completion_reward = {
+            add_ideas = {
+                DON_podgotovca_obedinenie
+            }
+        }
+    }
+    focus = {
+        id = DON_vozrojdenie_economici
+        icon = gfx_
+        prerequisite = { focus = DON_vostanovite_rostov}
+        x = 2
+        y = 2
+
+        cost = 10
+
+        ai_will_do = {
+			factor = 7
+		}
+
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = DON_vozrojdenie_rostova
+                add_idea = DON_vozrojdenie_rostova_1
+            }
+        }
+    }
+    focus = {
+        id = DON_dorogi_respublice
+        icon = gfx_
+        prerequisite = { focus = DON_vozrojdenie_economici}
+        x = 1
+        y = 3
+
+        cost = 10
+
+        ai_will_do = {
+			factor = 7
+		}
+
+        completion_reward = {
+            every_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+        }
+    }
+    focus = {
+        id = DON_vosstanovit_konevodstvo
+        icon = gfx_
+        prerequisite = { focus = DON_dorogi_respublice}
+        x = 1
+        y = 4
+
+        cost = 10
+
+        ai_will_do = {
+			factor = 7
+		}
+
+        completion_reward = {
+            random_owned_controlled_state = {
+					limit = {
+						industrial_complex > 0
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}   
+                }
+			random_owned_controlled_state = {
+				limit = {
+					# industrial_complex > 0
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+                    }
+                    random_owned_controlled_state = {
+				limit = {
+					# industrial_complex > 0
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+                    }
+                }
+            }
+            focus = {
+                id = DON_naity_agronomov
+            icon = gfx_
+            prerequisite = { focus = DON_experints_udobrenia}
+            x = 1
+            y = 6
+
+            cost = 10
+
+            ai_will_do = {
+		    	factor = 7
+            }
+
+            completion_reward = {
+                swap_ideas = {
+                    remove_idea = DON_experiments_udobrenia
+                    add_idea = DON_agrarian_state
+                }
+                }
+            }
+            focus = {
+            id = DON_experints_udobrenia
+            icon = gfx_
+            prerequisite = { focus = DON_vosstanovit_konevodstvo}
+            x = 1
+            y = 5
+
+            cost = 10
+
+            ai_will_do = {
+		    	factor = 7
+            }
+
+            completion_reward = {
+                add_ideas = DON_experiments_udobrenia
+                }
+            }
+            focus = {
+                id = DON_first_tractor
+            icon = gfx_
+            prerequisite = { focus = DON_naity_agronomov}
+            x = 1
+            y = 7
+
+            cost = 10
+
+            ai_will_do = {
+		    	factor = 7
+            }
+
+            completion_reward = {
+                swap_ideas = {
+                    remove_idea = DON_vozrojdenie_rostova_1
+                    add_idea = DON_vozrojdenie_rostova_2
+                }
+                }
+            }
+            focus = {
+                id = DON_start_produce_technic
+            icon = gfx_
+            prerequisite = { focus = DON_first_tractor}
+            x = 1
+            y = 8
+
+            cost = 10
+
+            ai_will_do = {
+		    	factor = 7
+            }
+
+            completion_reward = {
+                swap_ideas = {
+                    remove_idea = DON_vozrojdenie_rostova_2
+                    add_idea = DON_vozrojdenie_rostova_3
+                }
+                }
+            }
+    focus = {
+        id = DON_redus_taxes
+        icon = gfx_
+        prerequisite = { focus = DON_dorogi_respublice}
+        x = 3
+        y = 4
+
+        cost = 10
+
+        ai_will_do = {
+			factor = 7
+		}
+
+        completion_reward = {
+            add_ideas = DON_nizkie_nalogy
+            }
+        }
 }
