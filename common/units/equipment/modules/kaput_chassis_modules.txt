@@ -1,0 +1,100 @@
+equipment_modules = {
+
+	kaput_module_big_berta = {
+		abbreviation = "bib"
+		category = kaput_main_armament_module
+		sfx = sfx_ui_sd_module_turret
+		
+		xp_cost = 2
+		add_stats = {
+			soft_attack = 75
+			hard_attack = 5
+			ap_attack = 25
+			build_cost_ic = 10
+			breakthrough = 50
+					}
+			build_cost_resources = {
+			steel = 3
+			tungsten = 2
+			}					
+				}
+	kaput_module_turret = {
+		abbreviation = "ktu"
+		category = kaput_turret_module
+		sfx = sfx_ui_sd_module_turret
+		
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 12
+			breakthrough = 50
+					}
+			build_cost_resources = {
+			steel = 2
+			}					
+				}
+	kaput_module_turretgun = {
+		abbreviation = "ktg"
+		category = kaput_special_module
+		sfx = sfx_ui_sd_module_turret
+		
+		xp_cost = 2
+		add_stats = {
+			soft_attack = 25
+			hard_attack = 50
+			ap_attack = 250
+			build_cost_ic = 10
+					}
+			build_cost_resources = {
+			steel = 3
+			}					
+				}
+	kaput_module_bortgun = {
+		abbreviation = "kbr"
+		category = kaput_special_module
+		sfx = sfx_ui_sd_module_turret
+		
+		xp_cost = 2
+		add_stats = {
+			soft_attack = 40
+			hard_attack = 40
+			ap_attack = 100
+			build_cost_ic = 10
+					}
+			build_cost_resources = {
+			steel = 2
+			}					
+				}
+	kaput_module_frontgun = {
+		abbreviation = "kfn"
+		category = kaput_special_module
+		sfx = sfx_ui_sd_module_turret
+		
+		xp_cost = 2
+		add_stats = {
+			soft_attack = 30
+			hard_attack = 50
+			ap_attack = 100
+			build_cost_ic = 10
+					}
+		build_cost_resources = {
+		steel = 2
+		}			
+				}				
+	kaput_module_radio = {
+		abbreviation = "kra"
+		category = kaput_special_module
+		sfx = sfx_ui_sd_module_turret
+		
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 10
+		}
+		multiply_stats = {
+			defense = 1
+			breakthrough = 1
+		}
+		build_cost_resources = {
+		aluminium = 2
+		}
+		}					
+	}

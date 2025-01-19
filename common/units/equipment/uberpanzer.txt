@@ -1,0 +1,57 @@
+equipments = {
+    kaput_uber_tank_arch = { 
+        year = 1936 
+         picture = archetype_super_heavy_tank_equipment	
+        is_archetype = yes # Указывает, является ли данная экипировка архитипом или нет
+        is_buildable = no # Предотвращает создание этой экипировки.
+        active = yes # Указывает, доступно ли это оборудование без изучения технологии.
+        
+        type = armor # Тип экипировки (пехота, танки, артиллерия и т. п.)
+
+        group_by = archetype # Указывает, как оборудование сгруппировано на рабочем экране
+        interface_category = interface_category_armor # Указывает, в какой категории оборудование появляется на рабочем экране
+        
+#		
+
+        
+        # Модификаторы, используемые оборудованием
+        modifiers = {
+
+        }
+    }
+	
+	 kaput_uber_tank_1 = { # ID нашей регулярной экипировки.
+        year = 1936 # Год, в котором можно получить эту экипировку
+        can_be_produced = {
+			has_tech = kaput_tech
+		}
+        active = yes # Указывает, доступно ли это оборудование без изучения технологии.
+
+        archetype = kaput_uber_tank_arch # ID архитипа, к которому присвоена данная экипировка
+        parent = <оборудование> # Какая экипировка является родительским для этого оборудования (то есть, та, которая заменяется). Если эта экипировка первая, это поле не нужно писать
+        priority = 100 # Приоритет для использования над другим оборудованием.
+        visual_level = 100 # Приоритет изображения в рабочем экране
+        
+     #Misc Abilities
+		maximum_speed = 4
+		reliability = 0.9
+		#Defensive Abilities
+		defense = 10
+		breakthrough = 380
+		armor_value = 200
+
+		#Offensive Abilities
+		soft_attack = 300
+		hard_attack = 150
+		ap_attack = 380
+		air_attack = 60	
+		fuel_consumption = 10
+		build_cost_ic = 300
+	resources = {
+			steel = 15
+			tungsten = 10
+			chromium = 5
+		}
+    }
+	
+}

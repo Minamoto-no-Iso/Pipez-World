@@ -1,0 +1,17 @@
+technologies = {
+kaput_tech = {
+		
+		allow = {
+			always = no
+		}
+		research_cost = 1
+		start_year = 1936
+
+		enable_subunits = {
+			kaput_unit
+		}
+		enable_equipments = {
+			kaput_uber_tank_1
+		}
+	}
+}
