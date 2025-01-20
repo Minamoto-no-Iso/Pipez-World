@@ -1,0 +1,65 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_EMI_big_berta_gun"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/lc_super_heavy_howitzer.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_kaput_210mm_cannon"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/lc_hull_mounted_railway_gun.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_kaput_bort_cannons"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/lc_medium_cannon_turret.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_kaput_front_cannons"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/lc_high_velocity_cannon_turret.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_kaput_frau_roket"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/lc_rocket_launcher.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_kaput_radio"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/lc_command_center.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_kaput_baracs"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/lc_bunker_emplacement.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_kaput_motor"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_gas_turbine_engine.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_kaput_suspension"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_bogie_suspension.dds"
+		legacy_lazy_load = no
+	}
+	
+		spriteType = {
+		name = "GFX_EMI_kaput_armor"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_riveted_armor.dds"
+		legacy_lazy_load = no
+	}
+
+	
+
+}

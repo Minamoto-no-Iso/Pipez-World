@@ -1,0 +1,17 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_empire_event"
+		texturefile = "gfx/event_pictures/empire_event.dds"
+	}
+	spriteType = {
+		name = "GFX_reich_event"
+		texturefile = "gfx/event_pictures/reich_event.dds"
+	}
+spriteType = {
+		name = "GFX_gift_event"
+		texturefile = "gfx/event_pictures/gift_event.dds"
+	}
+	
+	
+}

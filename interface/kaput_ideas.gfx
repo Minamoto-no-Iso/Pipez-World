@@ -1,0 +1,68 @@
+spriteTypes = {	
+
+
+
+	
+	spriteType = {
+		name = "GFX_idea_uberpanzer"
+		texturefile = "gfx/interface/ideas/uberpanzer.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_zusul"
+		texturefile = "gfx/interface/ideas/zusuls.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_baronidea"
+		texturefile = "gfx/interface/ideas/baronidea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gasidea"
+		texturefile = "gfx/interface/ideas/gasidea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fritzidea"
+		texturefile = "gfx/interface/ideas/fritzidea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_superidea"
+		texturefile = "gfx/interface/ideas/superidea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAEvolonteers_idea"
+		texturefile = "gfx/interface/ideas/idea_NORDIC_army_democratic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_zusul_army"
+		texturefile = "gfx/interface/ideas/zusul_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_zusul_army2"
+		texturefile = "gfx/interface/ideas/zusul_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_samogon_idea1"
+		texturefile = "gfx/interface/ideas/idea_SWE_vin_och_sprit_ab.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_samogon_idea2"
+		texturefile = "gfx/interface/ideas/idea_jap_duplicate_research.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_samogon_idea3"
+		texturefile = "gfx/interface/ideas/idea_SOV_atomic_bomb_project.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kolektiv_idea"
+		texturefile = "gfx/interface/ideas/idea_FIN_socialist_welfare.dds"
+	}		
+    spriteType = {
+		name = "GFX_idea_zavody_idea"
+		texturefile = "gfx/interface/ideas/idea_SOV_third_five_year_plan_civilian.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_win_idea"
+		texturefile = "gfx/interface/ideas/idea_por_iberian_workers_united.dds"
+	}
+
+
+}

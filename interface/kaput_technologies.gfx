@@ -1,0 +1,6 @@
+spriteTypes = {
+SpriteType = {
+        name = "GFX_kaput_tech_medium"
+        texturefile = "gfx/interface/technologies/kaput_uber_tank_1.dds"
+    }
+}

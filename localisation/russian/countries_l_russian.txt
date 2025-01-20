@@ -1,6 +1,0 @@
-﻿l_russian:
-
-DON_liberalism:0 "Ростовская Республика"
-DON_democratic:0 "Ростовская Республика"
-
-VIL_neutrality:0 "Вильгемсхаффенское Правительство"

@@ -1,0 +1,10 @@
+spriteTypes = {
+
+	spriteType = {
+		name = kaput_uber_tank_1
+		texturefile = gfx\interface\technologies/kaput_uber_tank_1.dds
+	}
+
+	
+
+}

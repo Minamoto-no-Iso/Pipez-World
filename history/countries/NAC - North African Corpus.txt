@@ -2,8 +2,6 @@ capital = 1832
 
 	set_oob = "NAC_oob"
 
-
-
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "1936_naval_mtg"
@@ -40,17 +38,7 @@ set_technology = {
         basic_train = 1
 }
 
-IF = {
-		limit = {
-			has_dlc = "No Step Back"
-			has_dlc = "Gotterdammerung"
-		}
-		complete_special_project = {
-			project = sp:sp_land_land_cruiser
-			scientist = CAE_Solomon_Geniusshtein
-			state = 660
-		}
-	}
+
 	
 if = {
 	limit = {
@@ -78,7 +66,7 @@ if = {
 }
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-	set_air_oob = "CAE_1936_air_bba"
+	#set_air_oob = "CAE_1936_air_bba"
 		set_technology = {
 			basic_small_airframe = 1
 			basic_medium_airframe = 1
@@ -96,7 +84,7 @@ if = {
 	limit = {
 		NOT = { has_dlc = "By Blood Alone" }
 	}
-	set_air_oob = "CAE_1936_air_legacy"
+	#set_air_oob = "CAE_1936_air_legacy"
 		set_technology = {
 			early_fighter = 1
 	fighter1 = 1
@@ -134,7 +122,7 @@ if = {
 		sonar = 1
 		basic_cruiser_armor_scheme = 1
 	}
-	set_naval_oob = "CAE_1936_naval_mtg"
+	#set_naval_oob = "CAE_1936_naval_mtg"
 
 else = {
 	set_technology = {
@@ -145,7 +133,7 @@ else = {
 		early_submarine = 1
 		transport = 1
 	}
-	set_naval_oob = "CAE_1936_naval"
+	#set_naval_oob = "CAE_1936_naval"
 }
 }
 add_equipment_to_stockpile = {
@@ -206,153 +194,9 @@ if = {
 		traits = { operative_commando }
 		bypass_recruitment = no
 		available_to_spy_master = yes
-		nationalities = { GER CAE }
+		nationalities = { NAC }
 		gender = male
 	}
 }
-if = {
-	limit = {
-		has_dlc = "Gotterdammerung"
-		has_dlc = "No Step Back"
-	}
-	create_equipment_variant = {
-        name = "Eisen Kaput"
-        type = land_cruiser_chassis_1
-        parent_version = 0
-        modules = {
-				lc_main_armament_slot = big_berta_gun
-				lc_secondary_armament_slot = kaput_210mm_cannon
-				lc_additional_armament_slot_1 = kaput_bort_cannons
-				lc_additional_armament_slot_2 = kaput_front_cannons
-				lc_additional_armament_slot_3 = kaput_frau_roket
-				lc_additional_armament_slot_4 = empty
-				lc_special_features_slot_1 = kaput_radio
-                lc_special_features_slot_2 = kaput_armor
-				lc_special_features_slot_3 = kaput_motor
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 0
-				tank_nsb_armor_upgrade = 0
-			}
-			icon = "gfx/interface/technologies/kaput_uber_tank_1.dds"
-		}
 
-		
-}
-
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	create_equipment_variant = {
-		name = "SeaWolf"
-		type = ship_hull_submarine_2
-		
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_2
-			fixed_ship_engine_slot = sub_ship_engine_2
-			rear_1_custom_slot = empty
-		}
-	}
-	create_equipment_variant = {
-			name = "MinenBoat"
-			type = ship_hull_light_2
-			name_group = GER_DD_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_light_battery_1
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = empty
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = light_ship_engine_2
-				fixed_ship_torpedo_slot = empty
-				mid_1_custom_slot = ship_mine_layer_1
-				rear_1_custom_slot = ship_mine_layer_1
-			}
-		}
-		create_equipment_variant = {
-			name = "BomberBoat"
-			type = ship_hull_light_2
-			name_group = GER_DD_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_light_battery_1
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = ship_sonar_2
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = light_ship_engine_2
-				fixed_ship_torpedo_slot = empty
-				mid_1_custom_slot= ship_depth_charge_2
-				rear_1_custom_slot = ship_depth_charge_2
-			}
-		}
-		create_equipment_variant = {
-			name = "TorpedoBoat"
-			type = ship_hull_light_2
-			name_group = GER_DD_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_light_battery_1
-				fixed_ship_anti_air_slot = ship_anti_air_2
-				fixed_ship_fire_control_system_slot = empty
-				fixed_ship_radar_slot = ship_radar_1
-				fixed_ship_engine_slot = light_ship_engine_2
-				fixed_ship_torpedo_slot = ship_torpedo_2
-				mid_1_custom_slot = ship_torpedo_2
-				rear_1_custom_slot = ship_torpedo_2
-			}
-		}
-	}
- if = {
-	limit = {
-		has_dlc = "By Blood Alone"
-	}
-	create_equipment_variant = {
-		name = "BattleBroiler 404"
-		type = medium_plane_airframe_1
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_2 = small_bomb_bay
-			fixed_auxiliary_weapon_slot_3 = small_bomb_bay
-			engine_type_slot = engine_2_4x
-			special_type_slot_1 = fuel_tanks_medium
-			special_type_slot_2 = self_sealing_fuel_tanks_medium
-			special_type_slot_3 = empty
-			special_type_slot_4 = empty
-		}
-		
-	}
-	create_equipment_variant = {
-		name = "TorpedenFluger"
-		type = medium_plane_airframe_1
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = torpedo_mounting
-			fixed_auxiliary_weapon_slot_2 = torpedo_mounting
-			fixed_auxiliary_weapon_slot_3 = empty
-			engine_type_slot = engine_2_4x
-			special_type_slot_1 = fuel_tanks_medium
-			special_type_slot_2 = flying_boat_medium
-			special_type_slot_3 = self_sealing_fuel_tanks_medium
-			special_type_slot_4 = armor_plate_medium
-		}
-		
-	}
-	
-	create_equipment_variant = {
-		name = "Mde. 109"
-		type = small_plane_airframe_1
-		modules = {
-			fixed_main_weapon_slot = heavy_mg_4x
-			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
-			fixed_auxiliary_weapon_slot_2 = empty 
-			fixed_auxiliary_weapon_slot_3 = empty
-			engine_type_slot = engine_2_1x
-			special_type_slot_1 = self_sealing_fuel_tanks_small
-			special_type_slot_2 = empty
-			special_type_slot_3 = empty
-			special_type_slot_4 = empty
-		}
-		
-	}
  }

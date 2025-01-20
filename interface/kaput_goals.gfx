@@ -1,0 +1,35 @@
+spriteTypes = {	
+
+
+	
+	###Redux###
+	
+	SpriteType = { 
+		name = "GFX_focus_CAE_form_african_reich"
+		texturefile = "gfx/interface/goals/focus_CAE_form_african_reich.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_CAE_secure_power"
+		texturefile = "gfx/interface/goals/focus_CAE_secure_power.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_more_kaputCAE"
+		texturefile = "gfx/interface/goals/focus_CAE_more_kaput.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_bigfritzCAE"
+		texturefile = "gfx/interface/goals/focus_CAE_bigfritz.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_gas_weaponsCAE"
+		texturefile = "gfx/interface/goals/focus_CAE_chemical_weapons.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_granataCAE"
+		texturefile = "gfx/interface/goals/focus_CAE_supergranata.dds"
+	}
+	SpriteType = { 
+		name = "GFX_CAE_baron_und_kaput"
+		texturefile = "gfx/interface/goals/CAE_baron_und_kaput.dds"
+	}
+}

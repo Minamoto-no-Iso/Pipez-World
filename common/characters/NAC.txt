@@ -1,0 +1,325 @@
+characters = {
+
+#######################
+### COUNTRY LEADERS ###
+#######################
+
+	Baron_von_Schwalzkopf_XII = {
+		name = Baron_von_Schwalzkopf_XII
+		portraits = {
+			army = {
+				large = "gfx/leaders/NAC/baronvon.dds"
+				small = "gfx/interface/advisors/baron_advisor.dds"
+			}
+			civilian={
+				large = "gfx/leaders/NAC/baronvon.dds"
+				small = "gfx/interface/advisors/baron_advisor.dds"
+			}
+		}
+		field_marshal = {
+			traits = { defensive_doctrine urban_assault_specialist old_guard media_personality desert_fox }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+			legacy_id = 2000
+		}
+
+		country_leader={
+		  
+			expire = "1970.4.26"
+			ideology = despotism
+			traits = {
+				herr_major
+			}
+		}
+	}
+
+######################
+#### UNIT LEADERS ####
+######################
+
+	Hans_Schmulke = {
+		name = Hans_Schmulke
+		portraits = {
+			army = {
+				large = "gfx/leaders/NAC/hans.dds"
+				small = "gfx/interface/advisors/hans_schmulke_advisor.dds"
+			}
+			civilian = {
+				large = "gfx/leaders/NAC/hans.dds"
+				small = "gfx/interface/advisors/hans_schmulke_advisor.dds"
+			}
+    }
+
+		corps_commander = {
+			traits= { trickster war_hero ascari_officer desert_fox }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 2001
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = hans_schmulke
+			ledger = army
+			allowed = {
+				original_tag = NAC
+			}
+			available = {
+			}
+			traits = {
+				spaher_schmulke
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 8.000
+			}
+		}
+	}
+
+	Zhrankel = {
+		name = Zhrankel
+		portraits = {
+			army = {
+				large = "gfx/leaders/NAC/zhrankel.dds"
+				small = "gfx/interface/advisors/zhrankel_advisor.dds"
+			}
+			civilian = {
+				large = "gfx/leaders/NAC/zhrankel.dds"
+        small = "gfx/interface/advisors/zhrankel_advisor.dds"
+		}
+		}
+		corps_commander = {
+			traits = { ascari_officer  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 2002
+		}
+		advisor = {
+			slot = high_command
+			idea_token = zhankel
+			ledger = army
+			allowed = {
+				original_tag = NAC
+			}
+			traits = {
+				idioten
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+    	Drankel = {
+		name = Drankel
+		portraits = {
+			army = {
+				large = "gfx/leaders/NAC/drankel.dds"
+				small = "gfx/interface/advisors/drankel_advisor.dds"
+			}
+			civilian = {
+				large = "gfx/leaders/NAC/drankel.dds"
+        small = "gfx/interface/advisors/drankel_advisor.dds"
+		 }
+		 }
+		corps_commander = {
+			traits = { ascari_officer  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 2003
+			}
+			advisor = {
+			slot = high_command
+			idea_token = drankel
+			ledger = army
+			allowed = {
+				original_tag = NAC
+			}
+			traits = {
+				bolvanen
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		}
+
+	Yusuf = {
+		name = Yusuf
+		portraits = {
+			army = {
+				large = "gfx/leaders/NAC/yusuf.dds"
+				small = "gfx/interface/advisors/yusuf_advisor.dds"
+			}
+			civilian = {
+				large = "gfx/leaders/NAC/yusuf.dds"
+        small = "gfx/interface/advisors/yusuf_advisor.dds"
+		}
+		}
+		corps_commander = {
+			traits = { cavalry_officer desert_fox }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		  legacy_id = 669
+           }
+		   advisor = {
+			slot = high_command
+			idea_token = yusuf
+			ledger = army
+			allowed = {
+				original_tag = NAC
+			}
+			traits = {
+				iron_arap
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	     }
+
+		Komandor = {
+		name = Komandor
+		portraits = {
+			army = {
+				small = "GFX/interface/advisors/komandor_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = CAE_Komandor
+			allowed  = {
+				original_tag  = NAC
+			}
+			traits = {
+				air_chief_safety_3 
+			}
+		}
+	}
+
+
+		Gilles_Potolot = {
+		name = Gilles_Potolot
+		portraits = {
+			army = {
+				small = "GFX/interface/advisors/gilles_potolot_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Gilles_potolot
+			allowed  = {
+				original_tag  = NAC
+			}
+			traits  = {
+				mer_bangi
+			}
+		}
+	}
+	CAE_Andreus_Krebs = {
+		name = CAE_Andreus_Krebs
+		portraits = {
+			army = {
+				small = "GFX/interface/advisors/krebs_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Korneev
+			allowed  = {
+				original_tag  = NAC
+			}
+			traits  = {
+				krebs
+			}
+		}
+	}
+			Drinkins = {
+		name = Drinkins
+		portraits = {
+			army = {
+				large = "gfx/leaders/FPR/teoretik_big.dds"
+			small = "GFX/interface/advisors/drinkins_advisor.dds"
+			}
+			civilian = {
+				large = "gfx/leaders/FPR/teoretik_big.dds"
+			small = "GFX/interface/advisors/drinkins_advisor.dds"
+		}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = drinkins
+			ledger = army
+			allowed = {
+				original_tag = NAC
+			}
+			traits = {
+				close_air_support_proponent
+			}
+			available = {
+		}
+		}
+		 }
+	CAE_Solomon_Geniusshtein = {
+		name = CAE_Solomon_Geniusshtein
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_manfred_von_ardenne
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_armored_specialist }
+			skills = {
+				specialization_land = 2
+			}
+		}
+	}
+	CAE_Karl_von_Herrlange = {
+		name = CAE_Karl_von_Herrlange
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_max_kramer
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_aircraft_specialist scientist_trait_fast_learner }
+			skills = {
+				specialization_air = 2
+			}
+		}
+	}
+	CAE_Albert_Poshle = {
+		name = CAE_Albert_Poshle
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_helmuth_walter
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_submarine_specialist scientist_trait_bright }
+			skills = {
+				specialization_naval = 2
+			}
+		}
+	}
+	}
